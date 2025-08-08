@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""
-Type-annotated variables with specified values.
-"""
+'''Module for sum_list function'''
+from typing import List
 
-a: int = 1
-pi: float = 3.14
-i_understand_annotations: bool = True
-school: str = "Holberton"
+
+def sum_list(input_list: List[float]) -> float:
+    '''Sum a list of floats and return the result'''
+    return sum(input_list)
